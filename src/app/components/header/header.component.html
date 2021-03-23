@@ -1,0 +1,40 @@
+<mat-toolbar colorGrey class="container" textWhite>
+    <button mat-button>
+        <mat-icon>home</mat-icon>
+    </button>
+    <button mat-button (click)="scrollToElement(home)">
+        Portfolio
+    </button>
+    <button mat-button>
+        Sobre mim
+    </button>
+    <button mat-button>
+        Habilidades
+    </button>
+    <button mat-button>
+        Contato
+    </button>
+</mat-toolbar>
+<mat-card colorGrey textWhite class="example-card" #home>
+    <mat-card-header class="cardHeader">
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Bernardo Moreira</mat-card-title>
+        <mat-card-subtitle textWhite>Desenvolvedor FullStack</mat-card-subtitle>
+        <hr>
+        <div class="buttons">
+            <button mat-icon-button class="link" (click)="redirect('https://www.facebook.com/berjooj/')">
+                <fa-icon [icon]="faFacebook"></fa-icon>
+            </button>
+            <button mat-icon-button class="link" (click)="redirect('https://twitter.com/Berjooj')">
+                <fa-icon [icon]="faTwitter"></fa-icon>
+            </button>
+            <button mat-icon-button class="link"
+                (click)="redirect('https://www.linkedin.com/in/bernardo-moreira-a35125122/')">
+                <fa-icon [icon]="faLinkedinIn"></fa-icon>
+            </button>
+            <button mat-icon-button class="link" (click)="redirect('https://github.com/Berjooj')">
+                <fa-icon [icon]="faGithub"></fa-icon>
+            </button>
+        </div>
+    </mat-card-header>
+</mat-card>

@@ -1,0 +1,52 @@
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content mat-card:not(.matCard) {
+    /* position: relative; */
+    top: -30px;
+    width: 70%;
+    /* height: 500px; */
+
+    box-shadow: none !important;
+    border-radius: 20px;
+
+    padding-top: 3rem;
+}
+
+img {
+    width: 400px !important;
+    height: 280px !important;
+    padding: .5rem;
+    padding-top: 0;
+    box-shadow: 1px 1spx 5px grey;
+}
+
+.matCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    /* background-color: grey; */
+    width: 400px !important;
+    height: 380px !important;
+}
+mat-tab img {
+    padding: 1em !important;
+}
+
+.height {
+    height: 250px !important;
+}
+.height1 {
+    height: 320px !important;
+}
+.height2 {
+    height: 400px !important;
+}
+
+.width1 {
+    width: 340px !important;
+}
